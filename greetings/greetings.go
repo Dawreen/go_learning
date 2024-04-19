@@ -15,6 +15,7 @@ func Hello(name string) (string, error) {
 
 	// If a name was received, return a greeting that embeds the name in a message.
 	message := fmt.Sprintf(randomFormat(), name)
+	// message := fmt.Sprint(randomFormat()) // Make tests FAIL
 	return message, nil
 }
 
